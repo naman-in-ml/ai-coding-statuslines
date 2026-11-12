@@ -1,50 +1,38 @@
 # AI Coding Statuslines
 
-Shared status lines for Codex, Google Antigravity CLI (`agy`), and Claude Code.
+Status lines for Codex, Google Antigravity CLI (`agy`), and Claude Code.
 
-See your model, reasoning mode, working directory, Git branch, changed files, context usage, context-window size, and five-hour/weekly usage limits while you work.
+They show useful information directly in your terminal:
 
-## What this solves
+- Model and reasoning mode
+- Current working directory
+- Git branch and changed files
+- Context usage and context-window size
+- Five-hour and weekly usage limits
 
-AI coding agents hide important session information in menus or slash commands. These status lines keep the most useful signals visible in the terminal:
+## Problem this solves
 
-```text
-Claude Opus (high) | 📁 my-project | git:main Δ3 | ctx 24% (24k/200k) | win 200k | 5h 82% left | 7d 61% left
-```
+AI coding agents often hide context usage, Git state, and account limits behind menus or commands. These status lines keep that information visible while you work, so you can see when a session is getting full or a usage limit is approaching.
 
-The three agents expose different payloads, so each implementation uses that agent's supported configuration format while keeping the displayed information consistent.
+## Installation
 
-## Install
-
-Clone this repository, then follow the agent-specific guide:
+Clone the repository:
 
 ```bash
 git clone https://github.com/naman-in-ml/ai-coding-statuslines.git
 cd ai-coding-statuslines
 ```
 
+Choose your coding agent:
+
 - [Codex](codex/README.md)
-- [Antigravity CLI](antigravity/README.md)
+- [Google Antigravity CLI](antigravity/README.md)
 - [Claude Code](claude-code/README.md)
 
-macOS and Linux use the Bash/Python examples. Windows users should use the PowerShell Claude Code script documented in [claude-code/README.md](claude-code/README.md); install Git for Windows for Git metadata.
+## Usage
 
-## Compatibility
+Follow the guide for your agent. Each guide explains where to copy the status-line script or configuration and how to enable it.
 
-| Agent | Configuration | Core fields |
-|---|---|---|
-| Codex | `~/.codex/config.toml` | Native status-line items |
-| Antigravity CLI | `~/.gemini/antigravity-cli/settings.json` + command | JSON payload command |
-| Claude Code | `~/.claude/settings.json` + command | JSON payload command |
+Restart the coding agent after installation. The status line will refresh while you work.
 
-## Search terms
-
-This project is for developers searching for: Codex status line, Claude Code statusline, Antigravity CLI status line, agy statusline, AI coding agent quota display, context window indicator, Git branch terminal status, coding assistant usage limits, and terminal AI usage tracker.
-
-## Safety
-
-The scripts only read agent-provided session data and local Git metadata. They do not send telemetry or store credentials. Review the files before installing them on a shared machine.
-
-## License
-
-MIT
+The scripts read only the agent's status data and local Git metadata. They do not collect telemetry or store credentials.
