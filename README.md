@@ -27,6 +27,8 @@ cd ai-coding-statuslines
 - [Antigravity CLI](antigravity/README.md)
 - [Claude Code](claude-code/README.md)
 
+macOS and Linux use the Bash/Python examples. Windows users should use the PowerShell Claude Code script documented in [claude-code/README.md](claude-code/README.md); install Git for Windows for Git metadata.
+
 ## Compatibility
 
 | Agent | Configuration | Core fields |
