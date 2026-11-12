@@ -32,4 +32,4 @@ Keep pull requests small and focused when possible.
 
 ## Security
 
-Do not report security issues in a public issue. Contact the repository owner privately with a description, reproduction steps, and impact.
+Do not report security issues in a public issue. Contact the repository me privately with a description, reproduction steps, and impact.
