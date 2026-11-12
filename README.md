@@ -36,3 +36,7 @@ Follow the guide for your agent. Each guide explains where to copy the status-li
 Restart the coding agent after installation. The status line will refresh while you work.
 
 The scripts read only the agent's status data and local Git metadata. They do not collect telemetry or store credentials.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for ideas, testing expectations, and pull request guidance.
