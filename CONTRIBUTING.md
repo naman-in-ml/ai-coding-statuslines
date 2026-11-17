@@ -18,6 +18,7 @@ Thanks for helping improve AI Coding Statuslines.
 4. Never commit credentials, tokens, private payloads, or personal paths.
 5. Test the relevant script with a representative JSON payload.
 6. Update the relevant README when installation or behavior changes.
+7. Run the unit test suite to verify tests pass: `python3 -m unittest discover tests`.
 
 ## Pull requests
 
@@ -32,4 +33,4 @@ Keep pull requests small and focused when possible.
 
 ## Security
 
-Do not report security issues in a public issue. Contact the repository me privately with a description, reproduction steps, and impact.
+Do not report security issues in a public issue. Contact the repository maintainer privately with a description, reproduction steps, and impact.
